@@ -175,6 +175,7 @@ def main(unused_argv):
 
         # Save a record of flags as a .json file in train_dir
         with open(os.path.join(FLAGS.train_dir, "flags.json"), 'w') as fout:
+            import pdb; pdb.set_trace()
             json.dump(FLAGS.__flags, fout)
 
         # Make bestmodel dir if necessary
